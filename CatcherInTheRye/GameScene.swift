@@ -108,7 +108,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     override func update(currentTime: CFTimeInterval) {
         moveInvaders()
         moveChild()
-        let xForce: CGFloat = 8.0
+        let xForce: CGFloat = 8.06
         if let touch = lastTouch {
             let xOffset = (touch.x - player.position.x)*0.1
             let yOffset = (touch.y - player.position.y)*0.05
